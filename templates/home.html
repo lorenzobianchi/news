@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<!-- {% if user.is_authenticated %}
+<h4>Hi {{ user.username }}!</h4>
+<p><a class="btn btn-warning"  href="{% url 'logout' %}">logout</a></p>
+{% else %}
+<p>You are not logged in!</p>
+<a class="btn btn-primary"  href="{% url 'login' %}">login</a>
+<a class="btn btn-info"  href="{% url 'signup' %}">signup</a>
+{% endif %} -->
+<div class="jumbotron bg-success text-white">
+  <h1 class="display-4">Newspaper app</h1>
+  <p class="lead">A Newspaper website built with Django.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}" role="button">
+      View All Articles
+    </a>
+  </p>
+</div>
+{% endblock %}
